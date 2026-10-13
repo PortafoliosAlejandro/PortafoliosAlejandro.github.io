@@ -98,18 +98,18 @@ deshabilitado automáticamente.
 
 El sitio se publica automáticamente en:
 
-**https://pulposky.github.io/portafolios/**
+**https://portafoliosalejandro.github.io/**
 
-Cada `push` a `main` dispara el workflow `.github/workflows/deploy.yml`, que
-construye el proyecto y lo publica en GitHub Pages. El build usa `base` igual a
-`/portafolios/` (ver `vite.config.ts`), que debe coincidir con el nombre del
-repositorio.
+Se sirve desde la raíz (repositorio `PortafoliosAlejandro.github.io` en la
+organización), por lo que `base` es `/` en `vite.config.ts`. Cada `push` a `main`
+dispara el workflow `.github/workflows/deploy.yml`, que construye el proyecto y
+lo publica en GitHub Pages.
 
 Para probar localmente el resultado de producción:
 
 ```bash
 npm run build
-npm run preview   # http://localhost:4173/portafolios/
+npm run preview   # http://localhost:4173/
 ```
 
 `npm run build` también genera `dist/404.html` (copia de `index.html`) como
