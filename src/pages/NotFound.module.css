@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 100svh;
+  padding-top: var(--nav-height);
+}
+
+.code {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin-bottom: 12px;
+}
+
+.text {
+  margin-top: 12px;
+  max-width: 52ch;
+}
+
+.action {
+  margin-top: 28px;
+}

@@ -1,0 +1,19 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding-block: 40px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.name {
+  color: var(--color-white);
+  font-weight: 600;
+}

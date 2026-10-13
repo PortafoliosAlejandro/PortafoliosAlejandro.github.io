@@ -1,0 +1,17 @@
+.card {
+  padding: clamp(24px, 5vw, 48px);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.mail {
+  margin-top: 18px;
+  font-family: var(--font-mono);
+}

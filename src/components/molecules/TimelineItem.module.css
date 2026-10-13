@@ -1,0 +1,59 @@
+.item {
+  position: relative;
+  padding-left: 36px;
+  padding-bottom: 36px;
+}
+
+.item:last-child {
+  padding-bottom: 0;
+}
+
+/* Línea vertical de la línea de tiempo. */
+.item::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--color-border);
+}
+
+.item:last-child::before {
+  display: none;
+}
+
+.marker {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  box-shadow: 0 0 0 4px var(--color-black);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.period {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+
+.title {
+  font-size: 1.12rem;
+}
+
+.place {
+  font-size: 0.9rem;
+  color: var(--color-text);
+}

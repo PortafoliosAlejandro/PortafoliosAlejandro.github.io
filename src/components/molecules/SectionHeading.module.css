@@ -1,0 +1,21 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: clamp(32px, 5vw, 56px);
+  max-width: 64ch;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.eyebrow::before {
+  content: '';
+}
+
+.description {
+  max-width: 60ch;
+}

@@ -1,0 +1,30 @@
+/* Tokens de color y tipografía — solo escala de grises. */
+:root {
+  /* Colores */
+  --color-black: #000000;
+  --color-surface: #111111;
+  --color-border: #333333;
+  --color-muted: #9a9a9a;
+  --color-text: #cccccc;
+  --color-white: #ffffff;
+
+  /* Tipografía */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  /* Layout */
+  --container: 1120px;
+  --nav-height: 68px;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 20px;
+
+  /* Sombras (en gris, sin color de marca) */
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.03);
+  --shadow-card-hover: 0 18px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--color-white);
+
+  /* Transiciones */
+  --transition-fast: 200ms ease;
+  --transition: 300ms ease;
+  --transition-slow: 600ms ease;
+}
